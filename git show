@@ -1,0 +1,4 @@
+[33mfc8c00f[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Add menu and Booking APIs with routers and Viewsets
+[33m3f4eeec[m Fix file tree: move static assets, update views/urls/templates, and install DRF
+[33m9f1e495[m Ignore db.sqlite3 in repo
+[33mf2bd221[m[33m ([m[1;31morigin/littlelemon-setup[m[33m, [m[1;32mlittlelemon-setup[m[33m)[m Add LittleLemon Django project with Restaurant app
