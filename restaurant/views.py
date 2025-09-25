@@ -2,7 +2,7 @@ from django.shortcuts import render
 from rest_framework import generics, viewsets, permissions
 from .models import Menu, Booking
 from .serializers import MenuSerializer,BookingSerializer
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.decorators import permission_classes
 
 
@@ -13,7 +13,7 @@ def index(request):
 class MenuItemsView(generics.ListCreateAPIView):
     queryset = Menu.objects.all()
     serializer_class = MenuSerializer
-
+    permission_classes = [AllowAny]
 
 class SingleMenuItemView(generics.RetrieveUpdateDestroyAPIView):
     
